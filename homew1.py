@@ -1,0 +1,20 @@
+priceOfRice=45
+priceOfSugar=40
+priceOfOil=30
+qtyRice=3
+qtySugar=2.5
+qtyOil=1.8
+total_price_rice=priceOfRice*qtyRice
+total_price_sugar=priceOfSugar*qtySugar
+total_price_oil=priceOfOil*qtyOil
+print('Total price of rice=',total_price_rice,'Rs')
+print('Total price of sugar=',total_price_sugar,'Rs')
+print('Total price of oil=',total_price_oil,'Rs')
+total_bill=total_price_rice+total_price_sugar+total_price_oil
+print('Total bill=',total_bill,'Rs.')
+print('The total amount as an integer=',int(total_bill))
+print('The total amount as a string=',str(total_bill),'Rs.')
+import random
+delivery_charge=random.randrange(5,10)
+final_bill=total_bill+delivery_charge
+print('Final bill = ',final_bill,'Rs.')
